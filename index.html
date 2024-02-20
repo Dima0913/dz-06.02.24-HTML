@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article with Sidebar</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .article {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 0 0 250px;
+            padding: 20px;
+            background-color: #377eb894;
+            color: black;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                flex: 0 0 100%;
+            }
+        }
+
+        li {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="article">
+            <h1>Main Article Title</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sint autem unde consectetur, fuga labore.
+                Delectus doloremque itaque magni voluptate, saepe nemo iure sint veritatis incidunt id ipsum
+                exercitationem quam accusamus recusandae rem nesciunt optio aperiam quo possimus, explicabo, non earum
+                libero fugiat? Molestiae laudantium dolor minima saepe harum! Illo quibusdam delectus dignissimos
+                libero?</p>
+            <p>Atqui haec patefactio quasi rerum opertarum, cum quid quidque sit aperitur, definitio est. Nec hoc ille
+                non vidit, sed verborum magnificentia est et gloria delectatus. Deinde qui fit, ut ego nesciam, sciant
+                omnes, quicumque Epicurei esse voluerunt? Nam, ut saepe iam dixi, in infirma aetate inbecillaque mente
+                vis naturae quasi per caliginem cernitur.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar Menu</h2>
+            <ul>
+                <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corrupti adipisci
+                        necessitatibus illum iure quidem aut aliquam reprehenderit, sunt laborum, sint cum ad laboriosam
+                        beatae labore voluptatem! Facere ratione neque ipsam soluta dignissimos odio officia illum
+                        suscipit reprehenderit ea explicabo quo doloremque optio recusandae, itaque voluptate, eligendi
+                        minima omnis esse.</a></li>
+                <li><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, beatae laborum, deserunt rerum
+                        pariatur debitis ratione iusto iste totam iure maxime labore voluptates, architecto modi nemo
+                        illo dolorum magni nihil fuga ad veniam culpa eos?</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
